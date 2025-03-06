@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="controle.js"></script>
+
+    <title>Animaux à vendre</title>
+</head>
+<body>
+    <header>
+        <h1>Animaux à vendre</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Chien</h2>
+            <p>Prix: 300€</p>
+            <p>Stock: <span id="stock-chien">10</span></p>
+            <input type="number" id="quantite-chien" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Chien', 300, document.getElementById('quantite-chien').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Chat</h2>
+            <p>Prix: 250€</p>
+            <p>Stock: <span id="stock-chat">10</span></p>
+            <input type="number" id="quantite-chat" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Chat', 250, document.getElementById('quantite-chat').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Sugar Glider</h2>
+            <p>Prix: 450€</p>
+            <p>Stock: <span id="stock-sugar-glider">10</span></p>
+            <input type="number" id="quantite-sugar-glider" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Sugar Glider', 450, document.getElementById('quantite-sugar-glider').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Poisson</h2>
+            <p>Prix: 150€</p>
+            <p>Stock: <span id="stock-poisson">10</span></p>
+            <input type="number" id="quantite-poisson" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Poisson', 150, document.getElementById('quantite-poisson').value)">Ajouter au panier</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="1.base.html">Accueil</a></li>
+                <li><a href="3.nouriture.html">Nourriture</a></li>
+                <li><a href="4.produit.html">Produits</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

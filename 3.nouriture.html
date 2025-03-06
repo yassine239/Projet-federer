@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="controle.js"></script>
+    <title>Nourriture à vendre</title>
+</head>
+<body>
+    <header>
+        <h1>Nourriture à vendre</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Croquettes Chien</h2>
+            <p>Prix: 45€</p>
+            <p>Stock: <span id="stock-croquettes-chien">10</span></p>
+            <input type="number" id="quantite-croquettes-chien" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Croquettes Chien', 45, document.getElementById('quantite-croquettes-chien').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Humides Chiens</h2>
+            <p>Prix: 15€</p>
+            <p>Stock: <span id="stock-humides-chiens">10</span></p>
+            <input type="number" id="quantite-humides-chiens" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Humides Chiens', 15, document.getElementById('quantite-humides-chiens').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Récompenses Chiens</h2>
+            <p>Prix: 5€</p>
+            <p>Stock: <span id="stock-recompenses-chiens">10</span></p>
+            <input type="number" id="quantite-recompenses-chiens" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Récompenses Chiens', 5, document.getElementById('quantite-recompenses-chiens').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Compléments Alimentaires Chiens</h2>
+            <p>Prix: 150€</p>
+            <p>Stock: <span id="stock-complements-alimentaires-chiens">10</span></p>
+            <input type="number" id="quantite-complements-alimentaires-chiens" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Compléments Alimentaires Chiens', 150, document.getElementById('quantite-complements-alimentaires-chiens').value)">Ajouter au panier</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="1.base.html">Accueil</a></li>
+                <li><a href="2.animaux.html">Animaux</a></li>
+                <li><a href="4.produit.html">Produits</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

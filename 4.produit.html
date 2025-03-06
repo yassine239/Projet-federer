@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="controle.js"></script>
+
+    <title>Produits à vendre</title>
+</head>
+<body>
+    <header>
+        <h1>Produits à vendre</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Jouets Chiens</h2>
+            <p>Prix: 25€</p>
+            <p>Stock: <span id="stock-jouets-chiens">10</span></p>
+            <input type="number" id="quantite-jouets-chiens" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Jouets Chiens', 25, document.getElementById('quantite-jouets-chiens').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Laisses</h2>
+            <p>Prix: 35€</p>
+            <p>Stock: <span id="stock-laisses">10</span></p>
+            <input type="number" id="quantite-laisses" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Laisses', 35, document.getElementById('quantite-laisses').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Couchage</h2>
+            <p>Prix: 55€</p>
+            <p>Stock: <span id="stock-couchage">10</span></p>
+            <input type="number" id="quantite-couchage" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Couchage', 55, document.getElementById('quantite-couchage').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Gamelles & Distributeurs</h2>
+            <p>Prix: 50€</p>
+            <p>Stock: <span id="stock-gamelles-distributeurs">10</span></p>
+            <input type="number" id="quantite-gamelles-distributeurs" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Gamelles & Distributeurs', 50, document.getElementById('quantite-gamelles-distributeurs').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Shampoing</h2>
+            <p>Prix: 14€</p>
+            <p>Stock: <span id="stock-shampoing">10</span></p>
+            <input type="number" id="quantite-shampoing" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Shampoing', 14, document.getElementById('quantite-shampoing').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Parfums</h2>
+            <p>Prix: 17€</p>
+            <p>Stock: <span id="stock-parfums">10</span></p>
+            <input type="number" id="quantite-parfums" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Parfums', 17, document.getElementById('quantite-parfums').value)">Ajouter au panier</button>
+        </section>
+        <section>
+            <h2>Hygiènes</h2>
+            <p>Prix: 47€</p>
+            <p>Stock: <span id="stock-hygienes">10</span></p>
+            <input type="number" id="quantite-hygienes" value="1" min="1" max="10" />
+            <button onclick="ajouterAuPanier('Hygiènes', 47, document.getElementById('quantite-hygienes').value)">Ajouter au panier</button>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="1.base.html">Accueil</a></li>
+                <li><a href="2.animaux.html">Animaux</a></li>
+                <li><a href="3.nouriture.html">Nourriture</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
